@@ -1,0 +1,316 @@
+.sticky_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 100px;
+    height: 60px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding-left: 100px;
+}
+.logo_content{
+    color: rgb(39, 39, 142);
+    font-size: 20px;
+    font-weight: 700;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    
+}
+.feed{
+    display: flex;
+    align-items: center;
+    
+    
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    
+}
+.feed a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(93, 93, 130);
+}
+.feed:hover{
+    background-color: rgb(214, 214, 228);
+    color: rgb(159, 87, 214);
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    
+    gap:10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+.explore a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.explore:hover{
+    background-color: rgb(214, 214, 228);
+    color: rgb(142, 9, 224);
+}
+.create_post{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+.create_post a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.create_post:hover{
+    background-color: rgb(214, 214, 228);
+    color: rgb(159, 87, 214);
+}
+
+.blue_bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(39, 39, 142);
+    width: 100%;
+    height:300px;
+    color:white;
+   
+}
+
+
+.blue_para_heading{
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.blue_heading span{
+    color:aqua;
+}
+
+.input_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.input_bar input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    
+    padding:20px 200px 20px 50px;
+}
+
+
+
+/* trending section */
+
+
+.left_bar{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.feed_body{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    gap:30px;
+    justify-content: center;
+
+}
+.trending_bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    border:2px solid rgb(219, 211, 211);
+    border-radius: 10px;
+}
+.trending_bar button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 2px sloid  rgb(168, 154, 154);
+    background-color: white;
+    color: rgb(93, 91, 91);
+    font-weight: 700;
+}
+
+.trending_bar button:hover{
+    background-color: rgb(214, 214, 228);
+    color: rgb(142, 9, 224);
+    cursor: pointer;
+}
+
+.stats_bar{
+    display: flex;
+    flex-direction: column;
+    padding:20px 20px 20px 20px;
+    border:2px solid rgb(219, 211, 211);
+    border-radius: 10px;;
+}
+.stats_bar h2{
+    border-bottom: 2px solid rgb(243, 223, 223);
+}
+
+.stats_bar div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.stats_bar div span{
+    font-size: 20px;
+    color: rgb(16, 54, 170);
+}
+
+
+/*middle bar*/
+.middle_bar{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border:2px solid rgb(229, 215, 215);
+    border-radius: 10px;
+    padding:20px 20px 20px 20px;
+    height:300px;
+}
+.post_header{
+    display: flex;
+    
+    align-items: center;
+    
+}
+.post_header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.user_details{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+    
+    
+}
+.user_details h6{
+    font-size: 20px;
+    margin-bottom:0;
+    margin-top: 0;
+    
+}
+.user_details p{
+    font-size:15px ;
+    margin:0;
+    color: rgb(93, 91, 91);
+}
+.post_body h4{
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.post_body p{
+    font-size: 15px;
+    color: rgb(93, 91, 91);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.post_footer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.user_details h6:hover{
+    color:blue;
+}
+.post_body h4:hover{
+    color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*right bar*/
+.right_bar{
+    display:flex;
+    flex-direction: column;
+    border:2px solid rgb(233, 230, 230);
+    border-radius: 10px;
+    width:fit-content;
+    height:fit-content;
+}
+.Suggestions_bar{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.developer_details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.developer_details img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.developer_details div{
+    display: flex;
+    flex-direction: column;
+}
+.name h6{
+    margin:0;
+    margin-bottom: 0;
+}
+.name p{
+    margin:0;
+    color: rgb(93, 91, 91);
+}
+
+.developer_details button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 2px solid  rgb(168, 154, 154);
+    background-color: rgb(73, 17, 227);
+    color: white;
+    font-weight: 700;
+}
