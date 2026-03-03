@@ -1,13 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>explore</title>
-    <link rel="stylesheet" href="./style.scss/styles.css" >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Details</title>
+  <link rel="stylesheet" href="./style.scss/styles.css" />
 </head>
+
 <body>
-      <header>
+
+ <header>
             <div class="sticky_head">
             <div class="logo">
                 <div class="logo_img">
@@ -18,7 +20,7 @@
             <div class="menu">
                 <span class="feed">
                     
-                        <a href="index.html">
+                        <a href="feed.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                             <span>
                                 Feed
@@ -48,35 +50,60 @@
             </div>
             </div>
         </header>
-        <div class="blue_bar">
-            <div class="blue_bar_content">
-                <div class="blue_heading">
-                    <h1>Explore the  <span>Community</span></h1>
-                </div>
-                <div class="blue_para">
-                    <h2>Discover talented developers and connect with like-minded creators</h2>
-                </div>
-                <div class="input_bar">
-                    <input type="text" placeholder="Search developers by name or username...">
-                </div>
-            </div>
+
+<section class="back-to-feed-section">
+  <div class="back-to-feed-container">
+
+    <a class="back-to-feed-link" href="index.html">← Back to Feed</a>
+
+    <div class="one-post1">
+
+      <div class="post-header">
+        <div class="dp-and-name">
+          <img class="dp" id="post-avatar" />
+          <div class="name-username">
+            <h4 id="post-author"></h4>
+            <p id="post-username"></p>
+          </div>
         </div>
+        <p class="post-time">Just now</p>
+      </div>
 
-    <section    class="explore-section">
+      <div class="post-title-and-desc">
+        <p id="post-title"></p>
+      </div>
 
-        <div class="explore-container" id="user-container" >       
+      <div class="post-body-content">
+        <p id="post-body"></p>
+      </div>
 
-        </div>
- 
-    </section>
-    <footer id="footer">
-        <div class="footer-section">
-            <p>©️ 2026 DevConnect. Built for learning JavaScript.</p>
-        </div>
-    </footer>
-    <script src="explore.js">
+      <div class="likes-comments-share-bookmark">
+        <button class="like-button">Like</button>
+        <button class="comment-button">Comments</button>
+        <button class="share-button">Share</button>
+        <button class="bookmark-button">Bookmark</button>
+      </div>
 
-    </script>
+    </div>
 
+    <p class="comments-headline">
+      Comments <span id="comments-count">(0)</span>
+    </p>
+
+    <div class="comments-count" id="comments-container"></div>
+<div class="more-comments">
+  <h3>More from this author</h3>
+  <div class="more-from-author" id="more-posts-container"></div>
+</div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-section">
+    <p>©️ 2026 DevConnect. Built for learning JavaScript.</p>
+  </div>
+</footer>
+
+<script src="back-to-feed.js"></script>
 </body>
 </html>
