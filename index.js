@@ -122,8 +122,4 @@ document.addEventListener("DOMContentLoaded", () => {
       post.style.display = text.includes(query) ? "block" : "none";
     }
   });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 8c93c57d0f4831d61079989901fed2e632078ab9
