@@ -1,14 +1,15 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>explore</title>
-    <link rel="stylesheet" href="./style.scss/styles.css" >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Details</title>
+  <link rel="stylesheet" href="./style.scss/styles.css" />
 </head>
+
 <body>
-      <header>
+
+     <header>
             <div class="sticky_head">
             <div class="logo">
                 <div class="logo_img">
@@ -40,7 +41,7 @@
                 <span class="create_post">
                     
                     
-                        <a href="create_post.html">
+                        <a href="create.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#310de3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
                             <span>Create Post</span>
                         </a>
@@ -49,39 +50,92 @@
             </div>
             </div>
         </header>
-        <div class="blue_bar">
-            <div class="blue_bar_content">
-                <div class="blue_heading">
-                    <h1>Explore the  <span>Community</span></h1>
-                </div>
-                <div class="blue_para">
-                    <h2>Discover talented developers and connect with like-minded creators</h2>
-                </div>
-                <div class="input_bar">
-                    <input type="text" placeholder="Search developers by name or username...">
-                </div>
-            </div>
+
+<section class="back-to-feed-section">
+  <div class="back-to-feed-container">
+
+    <a class="back-to-feed-link" href="index.html">← Back to Feed</a>
+
+    <!-- MAIN POST -->
+    <div class="one-post1">
+
+      <div class="post-header">
+        <div class="dp-and-name">
+          <img class="dp" id="post-avatar" />
+          <div class="name-username">
+            <h4 id="post-author"></h4>
+            <p id="post-username"></p>
+          </div>
         </div>
+        <p class="post-time">Just now</p>
+      </div>
 
-    <section    class="explore-section">
+      <div class="post-title-and-desc">
+        <p id="post-title"></p>
+      </div>
 
-        <div class="explore-container" id="user-container" >       
+      <div class="post-body-content">
+        <p id="post-body"></p>
+      </div>
 
-        </div>
- 
-    </section>
-    <footer id="footer">
-        <div class="footer-section">
-            <p>©️ 2026 DevConnect. Built for learning JavaScript.</p>
-        </div>
-    </footer>
-    <script src="explore.js">
+      <div class="likes-comments-share-bookmark">
+        <button class="like-button">
+          ❤️ <span class="like-count">0</span>
+        </button>
+        <button class="comment-button">
+          💬 <span id="comment-count-btn">0</span>
+        </button>
+        <button class="share-button">
+          🔁 <span class="share-count">0</span>
+        </button>
+        <button class="bookmark-button">
+          🔖
+        </button>
+      </div>
 
-    </script>
+    </div>
 
+    <!-- COMMENTS -->
+    <p class="comments-headline">
+      Comments <span id="comments-count">(0)</span>
+    </p>
+
+    <div class="comments-count" id="comments-container"></div>
+
+    <!-- ADD COMMENT FORM -->
+    <div class="comments-form">
+      <h3>Add a comment</h3>
+      <form id="comments-form" class="comment-form">
+        <label>Name</label>
+        <input type="text" id="name" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Comment</label>
+        <textarea id="comment" required></textarea>
+
+        <button type="submit" class="post-a-comment">
+          Post a Comment
+        </button>
+      </form>
+    </div>
+
+    <!-- MORE POSTS -->
+    <div class="more-comments">
+      <h3>More from this author</h3>
+      <div class="more-from-author" id="more-posts-container"></div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-section">
+    <p>©️ 2026 DevConnect</p>
+  </div>
+</footer>
+
+<script src="back-to-feed.js"></script>
 </body>
-=======
-<html>
-<h1>this is explore</h1>
->>>>>>> 8c93c57d0f4831d61079989901fed2e632078ab9
 </html>
