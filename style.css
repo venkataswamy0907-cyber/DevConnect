@@ -133,6 +133,7 @@
 .feed_body{
     display: flex;
     align-items: flex-start;
+    min-width: fit-content;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 50px;
@@ -144,6 +145,7 @@
 .left_bar{
     display: flex;
     flex-direction: column;
+    
     gap:50px;
     position: sticky;
     top: 30px;
@@ -158,7 +160,7 @@
     border-radius: 10px;
     
 }
-.trending_bar button{
+.trend-btn{
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
     border: 2px sloid  rgb(168, 154, 154);
@@ -211,9 +213,9 @@
 .middle_bar{
   display: flex;
   flex-direction: column;
-  
-  gap: 16px;          
   flex-grow: 1;
+  gap: 16px;          
+  
   padding: 20px;
   
 }
@@ -283,6 +285,12 @@
 }
 
 
+.read_more{
+    color: #7b39ed;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 
 
@@ -319,6 +327,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    width:fit-content;
 }
 
 
@@ -351,8 +360,18 @@
 .developer_details button{
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
-    border: 2px solid  rgb(168, 154, 154);
+    border:none;
     background-color: rgb(73, 17, 227);
     color: white;
     font-weight: 700;
+}
+.trend-btn.active{
+    background-color: #7b39ed;
+}
+
+.developer_details button.following{
+    
+    color: red;
+    background-color: rgb(252, 231, 225);
+
 }
